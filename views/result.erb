@@ -1,0 +1,15 @@
+<h2>
+<% if @throw == @computer_throw %>
+  Tied
+<% elsif @throw == @defeat[@computer_throw] %>
+  You won
+<% else %>
+  You lost
+<% end %>
+</h2>
+You     : <%= @throw %> <br>
+Computer: <%= @computer_throw %>
+
+<br>
+
+<a href="/">again!</a>
